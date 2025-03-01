@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="BasicIO" Database="BasicIO-babai.tags" Version="10000">
+  <Project Name="BasicIO" Path="BasicIO/BasicIO.project" Active="No"/>
+  <Project Name="Exercise1" Path="Exercise1/Exercise1.project" Active="No"/>
+  <Project Name="Section6" Path="Section^/Section^.project" Active="No"/>
+  <Project Name="Part6" Path="Part6/Part6.project" Active="No"/>
+  <Project Name="PrimitiveTypes" Path="PrimitiveTypes/PrimitiveTypes.project" Active="No"/>
+  <Project Name="SizeofOperator" Path="SizeofOperator/SizeofOperator.project" Active="No"/>
+  <Project Name="Constants" Path="Constants/Constants.project" Active="No"/>
+  <Project Name="Challenge" Path="Challenge/Challenge.project" Active="No"/>
+  <Project Name="Calculator" Path="Calculator/Calculator.project" Active="Yes"/>
+  <Project Name="Upload_photo" Path="Upload_photo/Upload_photo.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug">
+      <Environment/>
+      <Project Name="BasicIO" ConfigName="Debug"/>
+      <Project Name="Exercise1" ConfigName="Debug"/>
+      <Project Name="Section6" ConfigName="Debug"/>
+      <Project Name="Part6" ConfigName="Debug"/>
+      <Project Name="PrimitiveTypes" ConfigName="Debug"/>
+      <Project Name="SizeofOperator" ConfigName="Debug"/>
+      <Project Name="Constants" ConfigName="Debug"/>
+      <Project Name="Challenge" ConfigName="Debug"/>
+      <Project Name="Calculator" ConfigName="Debug"/>
+      <Project Name="Upload_photo" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release">
+      <Environment/>
+      <Project Name="BasicIO" ConfigName="Release"/>
+      <Project Name="Exercise1" ConfigName="Release"/>
+      <Project Name="Section6" ConfigName="Release"/>
+      <Project Name="Part6" ConfigName="Release"/>
+      <Project Name="PrimitiveTypes" ConfigName="Release"/>
+      <Project Name="SizeofOperator" ConfigName="Release"/>
+      <Project Name="Constants" ConfigName="Release"/>
+      <Project Name="Challenge" ConfigName="Release"/>
+      <Project Name="Calculator" ConfigName="Release"/>
+      <Project Name="Upload_photo" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
