@@ -1,46 +1,49 @@
-#include <iostream> // Include the input-output stream library
-
-using namespace std;
+#include <iostream>
+#include <string>
 
 int main() {
-    // Declare a 3D array with 2 layers, 3 rows, and 4 columns
-    int cube[2][3][4] = {
-        {
-            {1, 2, 3, 4},
-            {5, 6, 7, 8},
-            {9, 10, 11, 12}
-        },
-        {
-            {13, 14, 15, 16},
-            {17, 18, 19, 20},
-            {21, 22, 23, 24}
-        }
-    };
+    int totalQuestions = 10; // Total number of questions in the test
+    int correctAnswers; // Number of correct answers
+    double score; // Percentage score
+    std::string grade; // Letter grade
 
-    // Accessing elements
-    // Print the element at the first layer, first row, first column
-    cout << "Element at [0][0][0]: " << cube[0][0][0] << endl; // Output: 1
+    // Get the number of correct answers from the user
+    std::cout << "Enter the number of correct answers (out of " << totalQuestions << "): ";
+    std::cin >> correctAnswers;
 
-    // Print the element at the second layer, third row, fourth column
-    cout << "Element at [1][2][3]: " << cube[1][2][3] << endl; // Output: 24
+    // Calculate the score as a percentage
+    score = (static_cast<double>(correctAnswers) / totalQuestions) * 100;
 
-    // Modifying an element
-    // Change the element at the first layer, second row, third column
-    cube[0][1][2] = 99;
-    
-    // Print the modified element
-    cout << "Modified element at [0][1][2]: " << cube[0][1][2] << endl; // Output: 99
-
-    // Loop through and print all elements in the 3D array
-    for (int layer = 0; layer < 2; ++layer) { // Loop through layers
-        for (int row = 0; row < 3; ++row) { // Loop through rows
-            for (int column = 0; column < 4; ++column) { // Loop through columns
-                // Print the current element
-                cout << "cube[" << layer << "][" << row << "][" << column << "] = " 
-                     << cube[layer][row][column] << endl;
-            }
-        }
+    // Determine the letter grade based on the score
+    if (score >= 90) {
+        grade = "A";
+    } else if (score >= 80) {
+        grade = "B";
+    } else if (score >= 70) {
+        grade = "C";
+    } else if (score >= 60) {
+        grade = "D";
+    } else {
+        grade = "F";
     }
 
-    return 0; // Return 0 to indicate successful execution
+    // Output the results
+    std::cout << "Score: " << score << "%" << std::endl;
+    std::cout << "Grade: " << grade << std::endl;
+
+    // Output a conclusion based on the grade
+    if (grade == "A") {
+        std::cout << "Excellent work! You passed with flying colors." << std::endl;
+    } else if (grade == "B") {
+        std::cout << "Good job! You did well." << std::endl;
+    } else if (grade == "C") {
+        std::cout << "You passed, but there's room for improvement." << std::endl;
+    } else if (grade == "D") {
+        std::cout << "You barely passed. Consider studying more." << std::endl;
+    } else {
+        std::cout << "You failed. Better luck next time." << std::endl;
+    }
+
+    return 0;
 }
+
