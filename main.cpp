@@ -29,7 +29,7 @@ int main () {
     return 0;
 }
 */
-
+/*
 int main () {
     std::vector<int> numbers; 
     // Push_back (value) -> Adds am element to the end
@@ -66,4 +66,52 @@ int main () {
     
     return 0;
 
+}
+*/
+/*
+int main () {
+    std::vector<int> numbers = {10, 20, 30, 40, 50};
+    
+    std::cout << "First element: " << numbers[0] << std::endl;
+    std::cout << "Last element: " << numbers[numbers.size() - 1 ] << std::endl;
+    return 0;
+    
+}
+*/
+/*
+int main () {
+    std::vector<int> numbers = {1, 2, 3, 4, 5};
+    
+    std::cout << "Vector elements: ";
+    for (int at : numbers) {
+        std::cout << at << " ";
+    }
+    return 0;
+}
+*/
+/*
+int main() {
+    std::vector<int> numbers = {10, 20, 30, 40};
+    
+    numbers.insert(numbers.begin() + 1, 15);
+    
+    std::cout << "Vector after insert: ";
+    for(int num : numbers) {
+        std::cout << num << " ";
+    }
+     return 0;
+}
+*/
+
+int main () {
+    std::vector<int> numbers = {5, 10, 15, 20, 25};
+    
+    numbers.erase(numbers.begin() + 1);
+    
+    std::cout << "Vector after erase: ";
+    for (int num : numbers) {
+        std::cout << num << " ";
+    }
+    
+    return 0;
 }
