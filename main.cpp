@@ -1,117 +1,76 @@
 #include <iostream> 
-#include <vector>
-/*
-int main () {
-    std::vector<int> numbers = {10, 20, 30, 40};
-    
-    numbers.push_back(50);
-    numbers[1] = 25;
-    
-    std::cout << "Vector elements: ";
-    for (int num : numbers ) {
-        std::cout << num << " ";
-    }
-    return 0;
-}
-*/
-/*
-int main () {
-    std::vector<int> numbers;
-    
-    numbers.push_back(20);
-    numbers.push_back(30);
-    numbers.push_back(40);
-    
-    std::cout << "Vector after push_back: ";
-    for (int num : numbers) {
-        std::cout << num << " ";
-    }
-    return 0;
-}
-*/
-/*
-int main () {
-    std::vector<int> numbers; 
-    // Push_back (value) -> Adds am element to the end
-    numbers.push_back(10);
-    numbers.push_back(20);
-    numbers.push_back(30);
-    
-    std::cout << "After push_back: ";
-    for (int num : numbers) {
-        std::cout << num << " " ;
-    }
-    
-    
-    std::cout << "\nSize of vector: " << numbers.size() << std::endl;
-    
-    // at (index) -> Access safely with bounds checking 
-    std::cout << "Element at index 2: " << numbers.at(2) << std::endl;
-    
-    // pop_back(0 -> Removes the last element 
-    numbers.pop_back();
-    std::cout << "After pop_back, size: " << numbers.size() << std::endl;
-    
-    // resize(n) -> changes size 
-    numbers.resize(8, 55);// Expands to size, 5 filling new slots with 99
-    std::cout << "After resize: ";
-    for (int num : numbers) {
-        std::cout << num << " ";
-    }
-    std::cout << "\nSize after resize: " << numbers.size() <<std::endl;
-    
-    // clear () -> empties the vector 
-    numbers.clear();
-    std::cout << "After clear, vector size: " << numbers.size() << std::endl;
-    
-    return 0;
 
-}
-*/
-/*
-int main () {
-    std::vector<int> numbers = {10, 20, 30, 40, 50};
-    
-    std::cout << "First element: " << numbers[0] << std::endl;
-    std::cout << "Last element: " << numbers[numbers.size() - 1 ] << std::endl;
-    return 0;
-    
-}
-*/
-/*
-int main () {
-    std::vector<int> numbers = {1, 2, 3, 4, 5};
-    
-    std::cout << "Vector elements: ";
-    for (int at : numbers) {
-        std::cout << at << " ";
-    }
-    return 0;
-}
-*/
-/*
+using namespace std;
+
+// increment operator ++
+// decrement operator -- 
+
 int main() {
-    std::vector<int> numbers = {10, 20, 30, 40};
+  
     
-    numbers.insert(numbers.begin() + 1, 15);
+    /*
+    int counter {10};
+    int result {0};
     
-    std::cout << "Vector after insert: ";
-    for(int num : numbers) {
-        std::cout << num << " ";
-    }
-     return 0;
-}
-*/
-
-int main () {
-    std::vector<int> numbers = {5, 10, 15, 20, 25};
     
-    numbers.erase(numbers.begin() + 1);
+    cout << "Counter: " << counter << endl;
     
-    std::cout << "Vector after erase: ";
-    for (int num : numbers) {
-        std::cout << num << " ";
-    }
+    counter = counter + 1; 
+    cout << "Counter: " << counter << endl;
     
+    counter ++;
+    cout << "Counter: " << counter << endl;
+    
+    ++counter;
+    cout << "Counter: " << counter << endl;
+    */
+    // increment
+    /*
+    int counter = 10;
+    int result = 0;
+    
+    cout << "Counter: " << counter << endl;
+    
+    result = ++counter;
+    cout << "Counter: " << counter << endl; >> there are counter was 11 
+    cout << "Result: " << result << endl;  >> while here is also 11  // but the counter were 10 initially
+    */
+    
+    // post increment
+    /*
+    int counter = 10;
+    int result = 0;
+    
+    cout << "Counter: " << counter << endl; // here is counter 10
+    
+    result = counter++;
+    cout << "Counter: " << counter << endl; // while here counter is became to 11
+    cout << "Result: " << result << endl; // but here it becomes result 10 again.
+    */
+    
+   /*    int counter = 10;
+    int result = 0;
+    
+    cout << "Counter: " << counter << endl; // here is counter 10
+    
+    result = ++counter + 10;
+    cout << "Counter: " << counter << endl; // while here counter is became to 11
+    cout << "Result: " << result << endl;
+   */
+   /*
+     int counter = 10;
+    int result = 0;
+    
+    cout << "Counter: " << counter << endl; // here is counter 10
+    
+    result = counter++ + 10;
+    cout << "Counter: " << counter << endl; // while here counter is became to 11
+    cout << "Result: " << result << endl;
+    
+    */
+    
+    
+    
+     
     return 0;
-}
+    }
