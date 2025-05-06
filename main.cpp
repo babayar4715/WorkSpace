@@ -3,48 +3,42 @@
 using namespace std;
 
 int main() {
-  /*
-    bool equal_result {false};
-    bool not_equal_result {false};
+   int num {};
+   const int min {10};
+   const int max {100};
+   
+   cout << "Enter a number between " << min << " and " << max << ": ";
+   cin >> num;
+   
+   if (num >= min) {
+       cout << "\n=================if statament 1 =================" << endl;
+       cout << num << " is greater than or equal to " << min << endl;
+       
+       int diff {num - min};
+       cout << num << " is " << diff << " greater than " << min << endl;
+   }
+
+    if (num <= max) {
+        cout << "\n=================if statament 2 =================" << endl;
+        cout << num << " is less that or equal to " << max << endl;
+        
+    int diff {max - num};
+    cout << num << " is " << diff << " less than " << max << endl;
     
-    int num1{}, num2{};
+
+    }
     
-    cout << boolalpha;
+    if (num >= min && num <= max) {
+        cout << "\n=================if statament 3 =================" << endl;
+        cout << num << " is in range "<< endl;
+        cout << "This means statements 1 and 2 must also display!! " << endl;
+    }
     
-    cout << "Enter two integers separated by a space: ";
-    cin >> num1 >> num2;
-    equal_result = (num1 == num2);
-    not_equal_result = (num1 != num2);
-    cout << "Comparision result (equals): " << equal_result << endl; 
-    cout << "Comparision result (not equals): " << not_equal_result << endl;
-    */
-    
-    
-    
-   /*   
-    bool equal_result {false};
-    bool not_equal_result {false};
-    
-    char char1{}, char2{};
-    
-    cout << boolalpha;
-    
-    cout << "Enter two character separated by a space: ";
-    cin >> char1 >> char2;
-    equal_result = (char1 == char2);
-    not_equal_result = (char1 != char2);
-    cout << "Comparision result (equals): " << equal_result << endl; 
-    cout << "Comparision result (not equals): " << not_equal_result << endl;
-    */
-    int num1{};
-    double double1{}, double2{};
-    
-    cout << "Enter an integer and a double separated by a space: ";
-    cin >> num1 >> double1;
-    equal_result = (num1 ==double1);
-    not_equal_result = ( num1 != double1);
-    cout << "Comparision result (equals): " << equal_result << endl;
-    cout << "Comparision result (not equals): " << not_equal_result << endl;
+if (num == min || num == max){
+        cout << "\n=================if statament 4 =================" << endl;
+        cout << num << " is right on a boundary " << endl;
+        cout << "This means all 4 statements display" << endl;
+}
     
     
     
